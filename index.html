@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RAW Creatives</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+/******************************
+RESET
+******************************/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:Poppins,sans-serif;
+background:#080808;
+color:white;
+overflow-x:hidden;
+
+}
+
+/******************************
+CONTAINER
+******************************/
+
+.container{
+
+width:90%;
+max-width:1300px;
+margin:auto;
+
+}
+
+/******************************
+HEADER
+******************************/
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+
+background:rgba(10,10,10,.85);
+
+backdrop-filter:blur(15px);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+header .container{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+height:85px;
+
+}
+
+.logo img{
+
+width:100px;
+
+}
+
+/******************************
+NAVIGATION
+******************************/
+
+nav ul{
+
+display:flex;
+gap:40px;
+list-style:none;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#d81d24;
+
+}
+
+/******************************
+BUTTONS
+******************************/
+
+.btn{
+
+display:inline-block;
+padding:14px 35px;
+
+background:#d81d24;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:white;
+
+transition:.35s;
+
+font-weight:600;
+
+}
+
+.btn:hover{
+
+background:white;
+color:black;
+
+}
+
+/******************************
+MOBILE MENU
+******************************/
+
+.menu-btn{
+
+display:none;
+font-size:30px;
+cursor:pointer;
+
+}
+
+/******************************
+HERO
+******************************/
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),
+
+url("images/hero.jpg") center/cover;
+
+display:flex;
+
+align-items:center;
+
+}
+
+.hero-content{
+
+max-width:700px;
+
+}
+
+.hero h4{
+
+color:#d81d24;
+
+letter-spacing:4px;
+
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-family:Montserrat,sans-serif;
+
+font-size:72px;
+
+font-weight:800;
+
+line-height:1.1;
+
+margin-bottom:25px;
+
+}
+
+.hero span{
+
+color:#d81d24;
+
+}
+
+.hero p{
+
+font-size:19px;
+
+color:#d0d0d0;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+gap:20px;
+
+}
+
+.outline{
+
+background:transparent;
+
+border:2px solid white;
+
+}
+
+.outline:hover{
+
+background:white;
+color:black;
+
+}
+
+/******************************
+RESPONSIVE
+******************************/
+
+@media(max-width:900px){
+
+nav{
+
+position:absolute;
+
+top:85px;
+
+left:0;
+
+width:100%;
+
+background:#111;
+
+display:none;
+
+}
+
+nav.active{
+
+display:block;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+padding:30px;
+
+gap:25px;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+.desktop-btn{
+
+display:none;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="container">
+
+<div class="logo">
+
+<img src="images/Rawlogo.jpg">
+
+</div>
+
+<nav id="menu">
+
+<ul>
+
+<li><a href="#">Home</a></li>
+
+<li><a href="#">About</a></li>
+
+<li><a href="#">Services</a></li>
+
+<li><a href="#">Portfolio</a></li>
+
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<a href="#" class="btn desktop-btn">
+
+Start Project
+
+</a>
+
+<div class="menu-btn" id="menuBtn">
+
+<i class="fas fa-bars"></i>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<h4>From Concept to Creation</h4>
+
+<h1>
+
+Elevate your <span>Digital presence</span> 
+
+<br>
+
+with excellence
+
+</h1>
+
+<p>
+
+We partner with brands, organizations, and talent across Kenya to transform raw ideas into unforgettable campaigns, remarkable events, and creative experiences that leave lasting impact.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#" class="btn">
+
+Start Your Project
+
+</a>
+
+<a href="#" class="btn outline">
+
+View Portfolio
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<script>
+
+const menu=document.getElementById("menu");
+
+const menuBtn=document.getElementById("menuBtn");
+
+menuBtn.onclick=function(){
+
+menu.classList.toggle("active");
+
+}
+
+</script>
+
+</body>
+
+</html>
