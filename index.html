@@ -84,7 +84,7 @@ height:85px;
 
 .logo img{
 
-width:100px;
+width:333px;
 
 }
 
@@ -163,17 +163,17 @@ HERO
 
 .hero{
 
-height:100vh;
+    min-height:100vh;
 
-background:
+    padding-top:120px;
 
-linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),
+    background:
+    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),
+    url("images/hero.jpg") center center/cover no-repeat;
 
-url("images/hero.jpg") center/cover;
+    display:flex;
 
-display:flex;
-
-align-items:center;
+    align-items:center;
 
 }
 
@@ -230,6 +230,17 @@ margin-bottom:40px;
 display:flex;
 gap:20px;
 
+}
+.hero-image{
+    width:100%;
+    overflow:hidden;
+}
+
+.hero-image img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:cover;
 }
 
 .outline{
@@ -299,7 +310,7 @@ display:none;
 
 .hero{
 
-text-align:center;
+text-align:left;
 
 }
 
@@ -318,6 +329,238 @@ flex-wrap:wrap;
 }
 
 }
+/*==============================
+OUR SERVICES
+==============================*/
+
+.services{
+
+    padding:120px 0;
+
+    background:#0c0c0c;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    max-width:700px;
+
+    margin:0 auto 70px;
+
+}
+
+.section-title span{
+
+    color:#d81d24;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+}
+
+.section-title h2{
+
+    font-size:3rem;
+
+    margin:18px 0;
+
+    font-family:'Montserrat',sans-serif;
+
+}
+
+.section-title p{
+
+    color:#a5a5a5;
+
+    line-height:1.8;
+
+}
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:#151515;
+
+    padding:40px 30px;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#d81d24;
+
+    box-shadow:0 20px 45px rgba(216,29,36,.18);
+
+}
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    background:rgba(216,29,36,.12);
+
+    border-radius:18px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.icon i{
+
+    color:#d81d24;
+
+    font-size:30px;
+
+}
+
+.service-card h3{
+
+    margin-bottom:18px;
+
+    font-size:1.2rem;
+
+    font-family:'Montserrat',sans-serif;
+
+}
+
+.service-card p{
+
+    color:#bfbfbf;
+
+    line-height:1.8;
+
+    font-size:.95rem;
+
+}
+
+/*==============================
+RESPONSIVE
+==============================*/
+
+@media(max-width:1100px){
+
+.services-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.services{
+
+padding:90px 0;
+
+}
+
+.section-title h2{
+
+font-size:2.2rem;
+
+}
+
+.services-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/*==============================
+FOOTER
+==============================*/
+
+.footer{
+
+    background:#050505;
+
+    padding:70px 0 30px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+}
+
+.footer-text{
+
+    font-size:1.3rem;
+
+    color:#bdbdbd;
+
+    letter-spacing:.5px;
+
+    margin-bottom:30px;
+
+    font-family:'Montserrat',sans-serif;
+
+}
+
+.footer-text span{
+
+    color:#d81d24;
+
+    font-weight:700;
+
+}
+
+.footer-divider{
+
+    width:80px;
+
+    height:3px;
+
+    background:#d81d24;
+
+    margin:0 auto 25px;
+
+    border-radius:50px;
+
+}
+
+.copyright{
+
+    color:#777;
+
+    font-size:.9rem;
+
+    letter-spacing:1px;
+
+}
 
 </style>
 
@@ -331,7 +574,7 @@ flex-wrap:wrap;
 
 <div class="logo">
 
-<img src="images/Rawlogo.jpg">
+<img src="images/logo.png">
 
 </div>
 
@@ -347,7 +590,7 @@ flex-wrap:wrap;
 
 <li><a href="#">Portfolio</a></li>
 
-<li><a href="#">Contact</a></li>
+<li><a href="contact.html">Contact</a></li>
 
 </ul>
 
@@ -373,22 +616,25 @@ Start Project
 
 <div class="container hero-content">
 
-<h4>From Concept to Creation</h4>
+<h4>From Concept to Creation.</h4>
 
-<h1>
+<h2>
 
-Elevate your <span>Digital presence</span> 
+Elevate your <span>Digital presence,</span> 
 
 <br>
 
-with excellence
+with excellence.
 
-</h1>
+</h2>
 
 <p>
 
-We partner with brands, organizations, and talent across Kenya to transform raw ideas into unforgettable campaigns, remarkable events, and creative experiences that leave lasting impact.
+We partner with brands, institutions, organizations, and talent across Kenya to transform raw ideas into unforgettable campaigns, remarkable events, and creative experiences that leave lasting impact.
 
+<div class="hero-image">
+    <img src="images/Fahm.png" alt="RAW Creatives Hero Image">
+</div>
 </p>
 
 <div class="hero-buttons">
@@ -410,6 +656,131 @@ View Portfolio
 </div>
 
 </section>
+<!-- ================= OUR SERVICES ================= -->
+
+<section class="services" id="services">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>OUR SERVICES</span>
+
+            <h2>From Concept to Creation</h2>
+
+            <p>
+                We provide end-to-end creative solutions that help brands,
+                organizations, businisses and talent bridging the gap between vision and reality.
+            </p>
+
+        </div>
+
+        <div class="services-grid">
+
+            <!-- Corporate -->
+
+            <div class="service-card">
+
+                <div class="icon">
+
+                    <i class="fas fa-briefcase"></i>
+
+                </div>
+
+                <h3>CORPORATE SOLUTIONS</h3>
+
+                <p>
+                    Building strong brands through strategic marketing,
+                    content creation, public relations, and corporate communications.
+                </p>
+
+            </div>
+
+            <!-- Events -->
+
+            <div class="service-card">
+
+                <div class="icon">
+
+                    <i class="fas fa-calendar-days"></i>
+
+                </div>
+
+                <h3>EVENT ORGANIZING</h3>
+
+                <p>
+                    Delivering exceptional conferences, brand launches,
+                    concerts, and private events from planning to production.
+                </p>
+
+            </div>
+
+            <!-- Talent -->
+
+            <div class="service-card">
+
+                <div class="icon">
+
+                    <i class="fas fa-microphone"></i>
+
+                </div>
+
+                <h3>TALENT DEVELOPMENT</h3>
+
+                <p>
+                    Nurturing talent through representation, career development,
+                    brand partnerships, bookings, and media training.
+                </p>
+
+            </div>
+
+            <!-- Network -->
+
+            <div class="service-card">
+
+                <div class="icon">
+
+                    <i class="fas fa-people-group"></i>
+
+                </div>
+
+                <h3>CREATIVE NETWORK</h3>
+
+                <p>
+                    Connecting brands, talent, and creatives to unlock
+                    collaborations, opportunities, and sustainable growth.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <p class="footer-text">
+
+            Bridging the gap between <span>vision</span> and <span>reality.</span>
+
+        </p>
+
+        <div class="footer-divider"></div>
+
+        <p class="copyright">
+
+            &copy; 2026 RAW Creatives. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
 
 <script>
 
